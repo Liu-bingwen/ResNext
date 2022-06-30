@@ -101,6 +101,7 @@ class ResNet(nn.Module):
                                 width_per_group=self.width_per_group))
 
         return nn.Sequential(*layers)
+    
 
     def forward(self, x):
         x = self.conv1(x)
